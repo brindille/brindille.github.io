@@ -1,0 +1,59 @@
+/*======================================================================
+  EXTENDS & MIXINS
+======================================================================*/
+@import '~stylus-media-queries'
+@import '~stylus-easing'
+@import '~stylus-reset'
+@import '~brindille-stylus-extends'
+
+/*======================================================================
+  EXTENDS
+======================================================================*/
+@import './config/variables.styl'
+@import './config/fonts.styl'
+
+/*======================================================================
+  BASE
+======================================================================*/
+reset()
+
+html
+  @extend .full-size
+
+body,
+.Section
+  @extend .full-size-relative
+  padding 20px
+
+.logo
+  width 200px
+  margin 0 auto
+  display block
+
+.title
+  text-align center
+  font-size 50px
+  font-family 'Roboto Mono', monospace
+  font-weight normal
+  color #EF7F59
+
+  img 
+    position relative
+    top 22px
+    right -20px
+    width 100px
+
+.markdown-body 
+  width 80%
+  margin 80px auto
+  min-width 300px
+  max-width 800px
+
+
+#symbols
+  display none
+
+/*======================================================================
+    COMPONENTS
+======================================================================*/
+@import '../views/**/*.styl'
