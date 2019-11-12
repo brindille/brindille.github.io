@@ -7,104 +7,102 @@
 
     <!-- metas -->
     <title>brindille</title>
-    <meta name="description" content="brindille" />
-
+    <meta name="description" content="brindille"/>
+    
     <!-- Favicon -->
-    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+    
     <!-- styles -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link media="all" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css" />
-    <link media="all" rel="stylesheet" href="/build.css" />
+    <link media="all" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css"/>
+    <link media="all" rel="stylesheet" href="/build.css"/>
   </head>
   <body>
-    <a href="https://github.com/brindille/brindille-static" class="github"><img height="32" width="32" src="https://unpkg.com/simple-icons@latest/icons/github.svg" /></a>
-    <h1 class="title"><img src="/assets/images/brindille.png" /> brindille</h1>
+    <a href="https://github.com/brindille/brindille-static" class="github"><img height="32" width="32" src="https://unpkg.com/simple-icons@latest/icons/github.svg"/></a>
+    
+    <h1 class="title"><img src="/assets/images/brindille.png"/> brindille</h1>
     <div class="markdown-body">
       <h2>
-        <a id="user-content-about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h2>
-      <p>Brindille is a collection of micro libraries intended to work together to build websites.</p>
-      <p>It was made for people like me who make websites that don't need reactivity or client side DOM rendering, and want minimal JS framework footprint.</p>
-      <h3>
-        <a id="user-content-components" class="anchor" href="#components" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Components</h3>
-      <p>Brindille is built around <a href="https://github.com/brindille/brindille-component">brindille-component</a> which is a script to recursively wrap Javascript objects around HTML elements. It does not handle any rendering, it needs to be plugged on an already existing DOM. It does however allows to bind logic and to manipulate dom elements. Components could be used to create complex animations and user interactions.</p>
-      <h3>
-        <a id="user-content-routing" class="anchor" href="#routing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Routing</h3>
-      <p>For multipage websites we've created <a href="https://github.com/brindille/brindille-router">brindille-router</a> which uses <a href="https://github.com/brindille/brindille-component">brindille-component</a> as a view system to allow you to change pages using the History API.</p>
-      <h3>
-        <a id="user-content-static-generation" class="anchor" href="#static-generation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Static generation</h3>
-      <p>Although components and route system can be used on any type of preexisting html, Brindille provides a <a href="https://github.com/brindille/brindille-static">starter</a> with a local server for rendering pages that is able to generate static HTML.</p>
-      <h2>
-        <a id="user-content-how-to-start" class="anchor" href="#how-to-start" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to start</h2>
-      <p>To start using brindille you should install the <a href="https://github.com/brindille/generator-brindille">yeoman generator</a></p>
-      <pre><code>npm i -g generator-brindille
+<a id="user-content-about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h2>
+<p>Brindille is a collection of micro libraries intended to work together to build websites.</p>
+<p>It was made for people like me who make websites that don't need reactivity or client side DOM rendering, and want minimal JS framework footprint.</p>
+<h3>
+<a id="user-content-components" class="anchor" href="#components" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Components</h3>
+<p>Brindille is built around <a href="https://github.com/brindille/brindille-component">brindille-component</a> which is a script to recursively wrap Javascript objects around HTML elements. It does not handle any rendering, it needs to be plugged on an already existing DOM. It does however allows to bind logic and to manipulate dom elements. Components could be used to create complex animations and user interactions.</p>
+<h3>
+<a id="user-content-routing" class="anchor" href="#routing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Routing</h3>
+<p>For multipage websites we've created <a href="https://github.com/brindille/brindille-router">brindille-router</a> which uses <a href="https://github.com/brindille/brindille-component">brindille-component</a> as a view system to allow you to change pages using the History API.</p>
+<h3>
+<a id="user-content-static-generation" class="anchor" href="#static-generation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Static generation</h3>
+<p>Although components and route system can be used on any type of preexisting html, Brindille provides a <a href="https://github.com/brindille/brindille-static">starter</a> with a local server for rendering pages that is able to generate static HTML.</p>
+<h2>
+<a id="user-content-how-to-start" class="anchor" href="#how-to-start" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to start</h2>
+<p>To start using brindille you should install the <a href="https://github.com/brindille/generator-brindille">yeoman generator</a></p>
+<pre><code>npm i -g generator-brindille
 </code></pre>
-      <p>Then you can create a new brindille project like this</p>
-      <pre><code>mkdir my-brindille-project
+<p>Then you can create a new brindille project like this</p>
+<pre><code>mkdir my-brindille-project
 cd my-brindille-project
 yo brindille
 </code></pre>
-      <p>Now you just have to start the local dev server</p>
-      <pre><code>npm start
+<p>Now you just have to start the local dev server</p>
+<pre><code>npm start
 </code></pre>
-      <h2>
-        <a id="user-content-adding-components" class="anchor" href="#adding-components" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adding components</h2>
-      <p>The basic structure from the starter is good enough to kick off a project but you will quickly need to add new components. For that just use our yeoman subgenerator and answer the prompts.</p>
-      <pre><code>yo brindille:component
+<h2>
+<a id="user-content-adding-components" class="anchor" href="#adding-components" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adding components</h2>
+<p>The basic structure from the starter is good enough to kick off a project but you will quickly need to add new components. For that just use our yeoman subgenerator and answer the prompts.</p>
+<pre><code>yo brindille:component
 </code></pre>
-      <h2>
-        <a id="user-content-building" class="anchor" href="#building" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Building</h2>
-      <p>Just use our build task, the whole website will be generated in <code>dist</code>.</p>
-      <pre><code>npm run build
+<h2>
+<a id="user-content-building" class="anchor" href="#building" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Building</h2>
+<p>Just use our build task, the whole website will be generated in <code>dist</code>.</p>
+<pre><code>npm run build
 </code></pre>
-      <h2>
-        <a id="user-content-technos" class="anchor" href="#technos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technos</h2>
-      <p>Here are the tools we use in the starter:</p>
-      <ul>
-        <li>
-          <a href="https://webpack.js.org/" rel="nofollow">webpack</a> for bundling</li>
-        <li>
-          <a href="https://expressjs.com/" rel="nofollow">express</a> for local dev server</li>
-        <li>
-          <a href="https://www.browsersync.io/" rel="nofollow">browser-sync</a> for HMR and various development goodies</li>
-        <li>
-          <a href="https://mozilla.github.io/nunjucks/" rel="nofollow">nunjucks</a> for local templating</li>
-        <li>
-          <a href="http://stylus-lang.com/" rel="nofollow">stylus</a> for styling</li>
-        <li>
-          <a href="https://yaml.org/" rel="nofollow">yaml</a> for content files</li>
-      </ul>
-      <h2>
-        <a id="user-content-configuration" class="anchor" href="#configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Configuration</h2>
-      <h3>
-        <a id="user-content-routes" class="anchor" href="#routes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Routes</h3>
-      <p>You need to define all the routes of your app in <code>data/routes.yaml</code>. This will be used both by client, local server and build tool. Default page will be the first entry from the list. The id of a route will be used to identity it and to create the class name of this routes (pascalcase). The path will be used by client and server routers and uses the <a href="http://expressjs.com/en/guide/routing.html" rel="nofollow">same route format than Express</a>.</p>
-      <div class="highlight highlight-source-yaml"><pre>- <span class="pl-ent">id</span>: <span class="pl-s"><span class="pl-pds">'</span>home<span class="pl-pds">'</span></span>
+<h2>
+<a id="user-content-technos" class="anchor" href="#technos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technos</h2>
+<p>Here are the tools we use in the starter:</p>
+<ul>
+<li>
+<a href="https://webpack.js.org/" rel="nofollow">webpack</a> for bundling</li>
+<li>
+<a href="https://expressjs.com/" rel="nofollow">express</a> for local dev server</li>
+<li>
+<a href="https://www.browsersync.io/" rel="nofollow">browser-sync</a> for HMR and various development goodies</li>
+<li>
+<a href="https://mozilla.github.io/nunjucks/" rel="nofollow">nunjucks</a> for local templating</li>
+<li>
+<a href="http://stylus-lang.com/" rel="nofollow">stylus</a> for styling</li>
+<li>
+<a href="https://yaml.org/" rel="nofollow">yaml</a> for content files</li>
+</ul>
+<h2>
+<a id="user-content-configuration" class="anchor" href="#configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Configuration</h2>
+<h3>
+<a id="user-content-routes" class="anchor" href="#routes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Routes</h3>
+<p>You need to define all the routes of your app in  <code>data/routes.yaml</code>. This will be used both by client, local server and build tool. Default page will be the first entry from the list. The id of a route will be used to identity it and to create the class name of this routes (pascalcase). The path will be used by client and server routers and uses the <a href="http://expressjs.com/en/guide/routing.html" rel="nofollow">same route format than Express</a>.</p>
+<div class="highlight highlight-source-yaml"><pre>- <span class="pl-ent">id</span>: <span class="pl-s"><span class="pl-pds">'</span>home<span class="pl-pds">'</span></span>
   <span class="pl-ent">path</span>: <span class="pl-s"><span class="pl-pds">'</span>home<span class="pl-pds">'</span></span>
 - <span class="pl-ent">id</span>: <span class="pl-s"><span class="pl-pds">'</span>about<span class="pl-pds">'</span></span>
   <span class="pl-ent">path</span>: <span class="pl-s"><span class="pl-pds">'</span>about<span class="pl-pds">'</span></span>
 - <span class="pl-ent">id</span>: <span class="pl-s"><span class="pl-pds">'</span>posts<span class="pl-pds">'</span></span>
   <span class="pl-ent">path</span>: <span class="pl-s"><span class="pl-pds">'</span>post<span class="pl-pds">'</span></span>
 - <span class="pl-ent">id</span>: <span class="pl-s"><span class="pl-pds">'</span>post<span class="pl-pds">'</span></span>
-  <span class="pl-ent">path</span>: <span class="pl-s"><span class="pl-pds">'</span>post/:id<span class="pl-pds">'</span></span></pre>
-      </div>
-      <h3>
-        <a id="user-content-languages" class="anchor" href="#languages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Languages</h3>
-      <p>You need to define all the languages of your app in <code>data/languages.yaml</code>. This will be used both by client, local server and build tool. Default lang will be the first entry from the list.</p>
-      <div class="highlight highlight-source-yaml"><pre>- <span class="pl-s"><span class="pl-pds">'</span>en<span class="pl-pds">'</span></span>
-- <span class="pl-s"><span class="pl-pds">'</span>fr<span class="pl-pds">'</span></span></pre>
-      </div>
-      <h3>
-        <a id="user-content-static-datas" class="anchor" href="#static-datas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Static datas</h3>
-      <p>Each page template will be passed content from a <code>.yaml</code> file if it exists.
-        Ex for Home page if you have the following <code>data/pages/home.yaml</code> file :</p>
-      <div class="highlight highlight-source-yaml"><pre><span class="pl-ent">title</span>: <span class="pl-s"><span class="pl-pds">'</span>Le Home Title<span class="pl-pds">'</span></span></pre>
-      </div>
-      <p>You will be able to access the title variable from nunjucks using <code>{{ Home.title }}</code></p>
-      <h3>
-        <a id="user-content-controllers" class="anchor" href="#controllers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Controllers</h3>
-      <p>Each page of your app can use a server side controller to populate its data. This controller will be called on local dev by express server and by the build tool for the static site. Each controller must be placed in the section folder. Controllers should export a data and or a routes functions that each return promises. Ex for Post page <code>src/views/sections/post/controller.js</code></p>
-      <div class="highlight highlight-source-js"><pre><span class="pl-c1">module</span>.<span class="pl-smi">exports</span> <span class="pl-k">=</span> {
+  <span class="pl-ent">path</span>: <span class="pl-s"><span class="pl-pds">'</span>post/:id<span class="pl-pds">'</span></span></pre></div>
+<h3>
+<a id="user-content-languages" class="anchor" href="#languages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Languages</h3>
+<p>You need to define all the languages of your app in  <code>data/languages.yaml</code>. This will be used both by client, local server and build tool. Default lang will be the first entry from the list.</p>
+<div class="highlight highlight-source-yaml"><pre>- <span class="pl-s"><span class="pl-pds">'</span>en<span class="pl-pds">'</span></span>
+- <span class="pl-s"><span class="pl-pds">'</span>fr<span class="pl-pds">'</span></span></pre></div>
+<h3>
+<a id="user-content-static-datas" class="anchor" href="#static-datas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Static datas</h3>
+<p>Each page template will be passed content from a <code>.yaml</code> file if it exists.
+Ex for Home page if you have the following <code>data/pages/home.yaml</code> file :</p>
+<div class="highlight highlight-source-yaml"><pre><span class="pl-ent">title</span>: <span class="pl-s"><span class="pl-pds">'</span>Le Home Title<span class="pl-pds">'</span></span></pre></div>
+<p>You will be able to access the title variable from nunjucks using <code>{{ Home.title }}</code></p>
+<h3>
+<a id="user-content-controllers" class="anchor" href="#controllers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Controllers</h3>
+<p>Each page of your app can use a server side controller to populate its data. This controller will be called on local dev by express server and by the build tool for the static site. Each controller must be placed in the section folder. Controllers should export a data and or a routes functions that each return promises. Ex for Post page <code>src/views/sections/post/controller.js</code></p>
+<div class="highlight highlight-source-js"><pre><span class="pl-c1">module</span>.<span class="pl-smi">exports</span> <span class="pl-k">=</span> {
   <span class="pl-en">data</span><span class="pl-k">:</span> (<span class="pl-smi">params</span>) <span class="pl-k">=&gt;</span> {
     <span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-en">Promise</span>(<span class="pl-smi">resolve</span> <span class="pl-k">=&gt;</span> {
       <span class="pl-en">resolve</span>({
@@ -121,21 +119,20 @@ yo brindille
       ])
     })
   }
-}</pre>
-      </div>
-      <p>The <code>data</code> function should return a promise that resolves an object that will be available in nunjucks templates <code>{{ Home.foo }}</code> will render to <code>bar</code>. The function will be passed url params as an object, ex for a <code>post/:id</code> route and for a <code>post/toto</code> request, data will receive a <code>{id: 'toto'}</code> object. This method will be called each time the view is rendered (never on client side). Typically you could use this method to return content of a given post from your favorite CMS.</p>
-      <p>The <code>routes</code> function should return a promise that resolves an array of subroutes to be rendered. You will need this for routes with params like <code>post/:id</code> to tell the builder which value of <code>id</code> should be used for static rendering. This method will only be used on build. Typically you could use this method to return a list of post from your favorite CMS.</p>
-      <h2>
-        <a id="user-content-project-structure" class="anchor" href="#project-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Structure</h2>
-      <pre><code>.
+}</pre></div>
+<p>The <code>data</code> function should return a promise that resolves an object that will be available in nunjucks templates <code>{{ Home.foo }}</code> will render to <code>bar</code>. The function will be passed url params as an object, ex for a <code>post/:id</code> route and for a <code>post/toto</code> request, data will receive a <code>{id: 'toto'}</code> object. This method will be called each time the view is rendered (never on client side). Typically you could use this method to return content of a given post from your favorite CMS.</p>
+<p>The <code>routes</code> function should return a promise that resolves an array of subroutes to be rendered. You will need this for routes with params like <code>post/:id</code> to tell the builder which value of <code>id</code> should be used for static rendering. This method will only be used on build. Typically you could use this method to return a list of post from your favorite CMS.</p>
+<h2>
+<a id="user-content-project-structure" class="anchor" href="#project-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Structure</h2>
+<pre><code>.
 ├─ data
 ├─ dist
 └─ src
 </code></pre>
-      <p>The file structure is divided into three main folders : <code>data</code>, <code>dist</code> and <code>src</code>. The <code>data</code> folder contains YAML files we use for static content and configurations, <code>src</code> contains all source code files that we use to generate the website, and <code>dist</code> contains the generated site (bundles and html static files). We will try to have a more in depth look into each of these folder.</p>
-      <h3>
-        <a id="user-content-data" class="anchor" href="#data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>data</h3>
-      <pre><code>data
+<p>The file structure is divided into three main folders : <code>data</code>, <code>dist</code> and <code>src</code>. The <code>data</code> folder contains YAML files we use for static content and configurations, <code>src</code> contains all source code files that we use to generate the website, and <code>dist</code> contains the generated site (bundles and html static files). We will try to have a more in depth look into each of these folder.</p>
+<h3>
+<a id="user-content-data" class="anchor" href="#data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>data</h3>
+<pre><code>data
 ├─ en
 |  ├─ pages
 |  |  ├─ home.yaml
@@ -151,13 +148,13 @@ yo brindille
 ├─ languages.yaml
 └─ routes.yaml
 </code></pre>
-      <p>We use the data folder to store both configuration and content YAMLs. It contains two very important files: <code>languages.yaml</code> and <code>routes.yaml</code> which are used to configure Brindille. Then for each languages specified in <code>languages.yaml</code> we have a folder for the corresponding language containing translation content for this language. For each language we use a <code>main.yaml</code> that contains global translated contents, and a yaml for each route.</p>
-      <h3>
-        <a id="user-content-dist" class="anchor" href="#dist" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>dist</h3>
-      <p>This folder contains the built version of the project, including bundles and html files for static hosting.</p>
-      <h3>
-        <a id="user-content-src" class="anchor" href="#src" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>src</h3>
-      <pre><code>src
+<p>We use the data folder to store both configuration and content YAMLs. It contains two very important files: <code>languages.yaml</code> and <code>routes.yaml</code> which are used to configure Brindille. Then for each languages specified in <code>languages.yaml</code> we have a folder for the corresponding language containing translation content for this language. For each language we use a <code>main.yaml</code> that contains global translated contents, and a yaml for each route.</p>
+<h3>
+<a id="user-content-dist" class="anchor" href="#dist" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>dist</h3>
+<p>This folder contains the built version of the project, including bundles and html files for static hosting.</p>
+<h3>
+<a id="user-content-src" class="anchor" href="#src" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>src</h3>
+<pre><code>src
 ├─ assets
 ├─ lib
 ├─ server
@@ -165,76 +162,78 @@ yo brindille
 ├─ views
 └─ index.js
 </code></pre>
-      <p>The <code>assets</code> folder will be served to your project's root and copied in the dist folder for export.</p>
-      <p>We use <code>lib</code> folder for storing code that is not meant to be specific for this project but that could be reused across different projects.</p>
-      <p>The <code>server</code> folder contains all files relative to local rendering and production bundling, feel free to dig into them to see how things work under the hoods. It also contains a global controller that is called each time a page of the site. The data it returns can be used in the templates.</p>
-      <p>In <code>styles</code> we have our main stylus files. Note that each component has its own stylus file in <code>src/views/[components|layouts|sections]/[component-name]</code></p>
-      <p><code>views</code> folder is where we store all our components, we dispatch them into three categories: <code>components</code> for components that can be used more than one, <code>layouts</code> for one-time specific component (like a header or footer) and <code>sections</code> for page components. In the <code>index.html</code> file is the root html file that is being rendered. Meaning that everytime our app is rendered it goes through this file which in turns call sub-components, layouts and sections depending on various parameters.</p>
-      <pre><code>src
+<p>The <code>assets</code> folder will be served to your project's root and copied in the dist folder for export.</p>
+<p>We use <code>lib</code> folder for storing code that is not meant to be specific for this project but that could be reused across different projects.</p>
+<p>The <code>server</code> folder contains all files relative to local rendering and production bundling, feel free to dig into them to see how things work under the hoods. It also contains a global controller that is called each time a page of the site. The data it returns can be used in the templates.</p>
+<p>In <code>styles</code> we have our main stylus files. Note that each component has its own stylus file in <code>src/views/[components|layouts|sections]/[component-name]</code></p>
+<p><code>views</code> folder is where we store all our components, we dispatch them into three categories: <code>components</code> for components that can be used more than one, <code>layouts</code> for one-time specific component (like a header or footer) and <code>sections</code> for page components. In the <code>index.html</code> file is the root html file that is being rendered. Meaning that everytime our app is rendered it goes through this file which in turns call sub-components, layouts and sections depending on various parameters.</p>
+<pre><code>src
 └─ views
    ├─ components
    ├─ layouts
    ├─ sections
    └─ index.html
 </code></pre>
-      <p>Each component, no matter if they are layout, section or basic component needs a few thing to work: an html file containing the proper nunjucks template, a stylus file for styling and a Javascript class defining behaviour. It also need to be registed in <code>src/index.js</code>. Optionally for sections you can add a <code>controller.js</code> file that will be executed by local renderer or by the builder to fetch specific datas that you need in the template. Also you can add a yaml file for a section in <code>data/[lang]/pages</code> and its content will automatically be available in this section template under the section's namespace.</p>
-      <pre><code>components
+<p>Each component, no matter if they are layout, section or basic component needs a few thing to work: an html file containing the proper nunjucks template, a stylus file for styling and a Javascript class defining behaviour. It also need to be registed in <code>src/index.js</code>. Optionally for sections you can add a <code>controller.js</code> file that will be executed by local renderer or by the builder to fetch specific datas that you need in the template. Also you can add a yaml file for a section in <code>data/[lang]/pages</code> and its content will automatically be available in this section template under the section's namespace.</p>
+<pre><code>components
 └─ mybutton
    ├─ mybutton.html
    ├─ mybutton.styl
    └─ Mybutton.js
 </code></pre>
-      <div class="highlight highlight-text-html-django"><pre><span class="pl-c"><span class="pl-c">&lt;!--</span> src/views/components/mybutton/mybutton.html <span class="pl-c">--&gt;</span></span>
-&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>Mybutton<span class="pl-pds">"</span></span> <span class="pl-e">data-component</span>=<span class="pl-s"><span class="pl-pds">"</span>Mybutton<span class="pl-pds">"</span></span>&gt;Click me&lt;/<span class="pl-ent">button</span>&gt;</pre>
-      </div>
-      <div class="highlight highlight-text-html-django"><pre><span class="pl-c"><span class="pl-c">&lt;!--</span> src/views/components/index.html <span class="pl-c">--&gt;</span></span>
+<div class="highlight highlight-text-html-django"><pre><span class="pl-c"><span class="pl-c">&lt;!--</span> src/views/components/mybutton/mybutton.html <span class="pl-c">--&gt;</span></span>
+&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>Mybutton<span class="pl-pds">"</span></span> <span class="pl-e">data-component</span>=<span class="pl-s"><span class="pl-pds">"</span>Mybutton<span class="pl-pds">"</span></span>&gt;Click me&lt;/<span class="pl-ent">button</span>&gt;</pre></div>
+<div class="highlight highlight-text-html-django"><pre><span class="pl-c"><span class="pl-c">&lt;!--</span> src/views/components/index.html <span class="pl-c">--&gt;</span></span>
 &lt;<span class="pl-ent">body</span>&gt;
   &lt;<span class="pl-ent">h1</span>&gt;here's a button :&lt;/<span class="pl-ent">h1</span>&gt; 
   <span class="pl-e">{%</span> <span class="pl-k">include</span> <span class="pl-s">'./components/mybutton/mybutton.html'</span> <span class="pl-e">%}</span>
-&lt;/<span class="pl-ent">body</span>&gt;</pre>
-      </div>
-      <div class="highlight highlight-source-stylus"><pre><span class="pl-c"><span class="pl-c">/*</span> src/views/components/mybutton/mybutton.styl <span class="pl-c">*/</span></span>
+&lt;/<span class="pl-ent">body</span>&gt;</pre></div>
+<div class="highlight highlight-source-stylus"><pre><span class="pl-c"><span class="pl-c">/*</span> src/views/components/mybutton/mybutton.styl <span class="pl-c">*/</span></span>
 <span class="pl-e">.Mybutton</span>
-  <span class="pl-c1">color</span> <span class="pl-smi">pink</span></pre>
-      </div>
-      <div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">/*</span> src/views/components/mybutton/Mybutton.js <span class="pl-c">*/</span></span>
+  <span class="pl-c1">color</span> <span class="pl-smi">pink</span></pre></div>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">/*</span> src/views/components/mybutton/Mybutton.js <span class="pl-c">*/</span></span>
 <span class="pl-k">import</span> <span class="pl-smi">Component</span> <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>brindille-component<span class="pl-pds">'</span></span>
+
 <span class="pl-k">class</span> <span class="pl-en">Mybutton</span> <span class="pl-k">extends</span> <span class="pl-e">Component</span> {
   <span class="pl-en">constructor</span>(<span class="pl-smi">$el</span>) {
     <span class="pl-c1">super</span>($el)
+
     <span class="pl-c1">this</span>.<span class="pl-smi">$el</span>.<span class="pl-c1">addEventListener</span>(<span class="pl-s"><span class="pl-pds">'</span>click<span class="pl-pds">'</span></span>, <span class="pl-c1">this</span>.<span class="pl-smi">onClick</span>.<span class="pl-en">bind</span>(<span class="pl-c1">this</span>))
   }
+
   <span class="pl-en">onClick</span> () {
     <span class="pl-c1">window</span>.<span class="pl-c1">alert</span>(<span class="pl-s"><span class="pl-pds">'</span>Clicked<span class="pl-pds">'</span></span>)
   }
-}</pre>
-      </div>
-      <div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">/*</span> src/index.js <span class="pl-c">*/</span></span>
+}</pre></div>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">/*</span> src/index.js <span class="pl-c">*/</span></span>
 <span class="pl-k">import</span> <span class="pl-smi">Mybutton</span> <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">"</span>./views/componenst/mybutton/Mybutton<span class="pl-pds">"</span></span>
-<span class="pl-smi">componentManager</span>.<span class="pl-en">registerMultiple</span>({ Mybutton })</pre>
-      </div>
-      <h2>
-        <a id="user-content-using-brindille-component-standalone-class" class="anchor" href="#using-brindille-component-standalone-class" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using brindille-component standalone class</h2>
-      <p>If you don't need everything else you can also plug brindille-component on your own html like this.</p>
-      <div class="highlight highlight-text-html-basic"><pre><span class="pl-c"><span class="pl-c">&lt;!--</span> index.html <span class="pl-c">--&gt;</span></span>
+<span class="pl-smi">componentManager</span>.<span class="pl-en">registerMultiple</span>({ Mybutton })</pre></div>
+<h2>
+<a id="user-content-using-brindille-component-standalone-class" class="anchor" href="#using-brindille-component-standalone-class" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using brindille-component standalone class</h2>
+<p>If you don't need everything else you can also plug brindille-component on your own html like this.</p>
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-c"><span class="pl-c">&lt;!--</span> index.html <span class="pl-c">--&gt;</span></span>
 &lt;<span class="pl-ent">body</span>&gt;
   &lt;<span class="pl-ent">div</span> <span class="pl-e">data-component</span>=<span class="pl-s"><span class="pl-pds">"</span>Mybutton<span class="pl-pds">"</span></span>&gt;click me&lt;/<span class="pl-ent">div</span>&gt;
-&lt;/<span class="pl-ent">body</span>&gt;</pre>
-      </div>
-      <div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">/*</span> index.js <span class="pl-c">*/</span></span>
+&lt;/<span class="pl-ent">body</span>&gt;</pre></div>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">/*</span> index.js <span class="pl-c">*/</span></span>
 <span class="pl-k">import</span> <span class="pl-smi">Component</span> <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>brindille-component<span class="pl-pds">'</span></span>
+
 <span class="pl-k">class</span> <span class="pl-en">Mybutton</span> <span class="pl-k">extends</span> <span class="pl-e">Component</span> {
   <span class="pl-en">constructor</span>(<span class="pl-smi">$el</span>) {
     <span class="pl-c1">super</span>($el)
+
     <span class="pl-c1">this</span>.<span class="pl-smi">$el</span>.<span class="pl-c1">addEventListener</span>(<span class="pl-s"><span class="pl-pds">'</span>click<span class="pl-pds">'</span></span>, <span class="pl-c1">this</span>.<span class="pl-smi">onClick</span>.<span class="pl-en">bind</span>(<span class="pl-c1">this</span>))
   }
+
   <span class="pl-en">onClick</span> () {
     <span class="pl-c1">window</span>.<span class="pl-c1">alert</span>(<span class="pl-s"><span class="pl-pds">'</span>Clicked<span class="pl-pds">'</span></span>)
   }
 }
-<span class="pl-k">const</span> <span class="pl-c1">app</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Component</span>(<span class="pl-c1">document</span>.<span class="pl-c1">body</span>, { Mybutton })</pre>
-      </div>
+
+<span class="pl-k">const</span> <span class="pl-c1">app</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Component</span>(<span class="pl-c1">document</span>.<span class="pl-c1">body</span>, { Mybutton })</pre></div>
+
     </div>
+
     <script id="main" src="/build.js"></script>
   </body>
 </html>
