@@ -8,7 +8,6 @@ module.exports = async function build(cliOptions = {}) {
   const pathUtils = require('./path')
   const webpack = require('webpack')
   const clone = require('clone')
-  const pretty = require('pretty')
   const { logError, logBuild } = require('./log')
 
   let outDir = cliOptions.outDir ? cliOptions.outDir : path.resolve(__dirname, '../../dist')
@@ -94,7 +93,7 @@ module.exports = async function build(cliOptions = {}) {
     const filepath = path.resolve(outDir + folderDir, filename)
 
     await fs.ensureDir(path.dirname(filepath))
-    await fs.writeFile(filepath, pretty(html, { ocd: true }))
+    await fs.writeFile(filepath, html)
   }
 
   async function renderSubPage(subroute, lang) {
