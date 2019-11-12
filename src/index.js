@@ -1,11 +1,6 @@
 import componentManager from "./lib/core/ComponentManager"
 import Component from "brindille-component"
-import "whatwg-fetch"
-import "gsap"
 import "./styles/index.styl"
-
-/* External */
-/* Section */
 
 /* Layout */
 import Markdown from "./views/layouts/markdown/Markdown"

@@ -3,7 +3,6 @@ module.exports = async function build() {
 
   const express = require('express')
   const webpack = require('webpack')
-  const pretty = require('pretty')
   const webpackConfig = require('../../webpack.config.js')
   const webpackDevMiddleware = require('webpack-dev-middleware')
   const webpackHotMiddleware = require('webpack-hot-middleware')
@@ -29,7 +28,7 @@ module.exports = async function build() {
     const isPartial = req.get('X-Requested-With') !== undefined
     const page = renderer.getPage(req.originalUrl)
     renderer.render(page, isPartial).then(html => {
-      res.send(pretty(html, { ocd: true }))
+      res.send(html)
     })
   })
 
