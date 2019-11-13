@@ -1,5 +1,5 @@
 
-![logo](brindille.png)
+![logo](brindille.svg)
 
 # brindille
 
